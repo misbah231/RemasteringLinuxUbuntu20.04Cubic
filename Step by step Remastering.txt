@@ -1,0 +1,64 @@
+Install Cubic
+1. sudo apt-add-repository ppa:cubic-wizard/release
+2. sudo apt update
+3. sudo apt install cubic
+4. Buka cubic di software All
+
+Make folder for cubic
+1. mkdir -p /home/misbah/BM-Nux
+2. Buka cubic lalu klik gambar folder di kanan
+3. Buka direktori Other Locations, Computer, home/misbah/BM-Nux Lalu Next
+
+Atur Project Cubic
+1. Masukkan file iso ubuntu (Filename Original Disk) Pilih di mana file disimpan
+2. Ubah nama (Filename Custom Disk) menjadi BM_Nux.iso
+3. Ubah nama Ubuntu 20.04 (Volume ID) menjadi BM_Nux, Lalu klik next di atas
+4. Terakhir akan terbuka terminal cubic (root@cubic:~#)
+
+Install Aplikasi
+1. apt install python3, python3 --version
+2. apt install apache2
+   add-apt-repository multiverse
+3. apt install apache2
+4. apt install dia
+5. apt install scilab
+   apt install ubuntu-restricted-extras
+6. apt install vlc
+7. apt install obs-studio
+8. apt install blender
+9. apt install gimp
+10.Install OpenOffice (Bukan command)
+   cd /opt
+   wget https://sourceforge.net/projects/openofficeorg.mirror/files/4.1.7/binaries/en-US/Apache_OpenOffice_4.1.7_Linux_x86-64_install-deb_en-US.tar.gz/download
+   tar -xvf download
+   cd en-US/DEBS
+   sudo dpkg -i *.deb
+   cd desktop-integration
+   dpkg -i *.deb
+   cd
+11.Install Mendeley (Bukan command)
+   wget https://desktop-download.mendeley.com/download/apt/pool/main/m/mendeleydesktop_1.19.4-stable_amd64.deb
+   dpkg -i mendeleydesktop_1.19.4-stable_amd64.deb
+   apt -f install
+12.Install GNU Radio
+   sudo add-apt-repository ppa:gnuradio/gnuradio-releases
+   sudo apt-get update
+   sudo apt-get install gnuradio
+
+
+Ubah Logo, Wallpaper, dan Tema
+Logo
+   cd /usr/share/icons/hicolor/256x256/apps
+   Buka gambar yg ingin dijadikan wallpaper, drag+copy ke terminal, Lalu klik Copy di atas
+   ls (Cek gambarnya)
+   mv logobaru.png ubuntu-logo-icon.png
+   ls
+   cd
+Wallpaper
+   cd /usr/share/backgrounds
+   Buka gambar yg ingin dijadikan wallpaper, drag+copy ke terminal, Lalu klik Copy di atas
+   mv wallpaperbaru.png warty-final-ubuntu.png
+   ls
+   cd
+Tema (Opsional)
+   sudo apt install arc-theme
